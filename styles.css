@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: var(--desaturated-blue);
+    font-weight: 500;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;  
+    background-color: var(--pale-blue);
+    
+    
+}
+
+.container {
+    width: 70%;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header {
+    width: 100%;
+}
+
+.hero-img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+h1 {
+    padding: 20px 0;
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+.min-card {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    margin: 20px auto 25px;
+    background-color: var(--very-pale-blue);
+    border-radius: 10px;
+    
+} 
+
+.min-card a {
+    color: var(--bright-blue);
+}
+
+.min-card a:hover {
+    color: rgba(56, 41, 224, 0.801);
+}
+
+.plan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.price-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-text :nth-child(1) {
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+button {
+    padding: 15px 50px;
+    border: none;
+    background-color: var(--bright-blue);
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+button:hover {
+    background-color: rgba(56, 41, 224, 0.801);
+    cursor: pointer;
+}
+
+.footer p {
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.footer p:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        height: 100vh;
+    }
+    .container {
+        width: 30%;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
